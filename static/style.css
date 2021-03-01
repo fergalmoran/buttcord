@@ -1,14 +1,33 @@
 .circle-icon {
+  background-color: #d1e6a1;
+  color: #e07969;
   padding: 30px;
   border-radius: 50%;
+  transition: 0.3s;
 }
-
-.pink-icon {
+.circle-icon:hover {
+  border-radius: 15%;
 }
-
-.orange-icon {
-  background: #ffcfc0;
+.list-group-item {
+  background-color: transparent;
+  transition: 0.5s;
 }
-.blue-icon {
-
+.list-group-item:hover {
+  border-left: blueviolet;
+  border-left-style: groove;
+}
+#buttons-pane {
+  background-color: #202225;
+}
+#channels-pane {
+  background-color: #2f3136;
+  color: white;
+}
+#main-pane {
+  background-color: #36393f;
+  color: white;
+}
+#friends-pane {
+  background-color: #2f3136;
+  color: white;
 }
