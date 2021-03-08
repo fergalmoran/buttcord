@@ -5,16 +5,23 @@
         <div id="buttons-pane"
              class="col-1 pt-3">
             <ul class="list-group">
-                <li class="list-group-item d-flex justify-content align-items-center">
+                <li class="list-group-item d-flex justify-content align-items-center"
+                    onclick="selectMe(event)">
                     <img class="circle-icon pink-icon"
-                         src="http://placebeard.it/64/64"
+                         src="http://placebeard.it/64/64?beard=1"
                          alt="">
                 </li>
-                <li class="list-group-item d-flex justify-content align-items-center">
-                    <i class="fas fa-baby-carriage circle-icon orange-icon"></i>
+                <li class="list-group-item d-flex justify-content align-items-center"
+                    onclick="selectMe(event)">
+                    <img class="circle-icon pink-icon"
+                         src="http://placebeard.it/64/64?beard=2"
+                         alt="">
                 </li>
-                <li class="list-group-item d-flex justify-content align-items-center">
-                    <i class="fas fa-ban circle-icon blue-icon"></i>
+                <li class="list-group-item d-flex justify-content align-items-center"
+                    onclick="selectMe(event)">
+                    <img class="circle-icon pink-icon"
+                         src="http://placebeard.it/64/64?beard=3"
+                         alt="">
                 </li>
             </ul>
         </div>
@@ -32,4 +39,17 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function selectMe(event) {
+        //this is the wrong way
+        //later, we will figure out why!
+        let li = document.querySelectorAll('li');
+        li.forEach(l => l.classList.remove('bc-active'));
+
+        event.currentTarget.classList.toggle('bc-active');
+    }
+</script>
 {% endblock %}

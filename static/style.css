@@ -15,6 +15,10 @@
   border-left: blueviolet;
   border-left-style: groove;
 }
+.list-group-item.bc-active {
+  border-left: #d1e6a1;
+  border-left-style: groove;
+}
 #buttons-pane {
   background-color: #202225;
 }
