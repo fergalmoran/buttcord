@@ -43,6 +43,15 @@
 
 {% block scripts %}
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+    });
+
+    document.addEventListener('mousedown', function (event) {
+        console.log('index', 'mousedownX', event.clientX);
+        console.log('index', 'mousedownY', event.clientY);
+    });
+
     function selectMe(event) {
         //this is the wrong way
         //later, we will figure out why!
